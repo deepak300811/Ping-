@@ -138,6 +138,9 @@ img {
               color: #fff;
             }
           }
+          &:focus {
+            outline: none;
+          }
           i {
             font-size: 14px;
             color: $primary-blue;

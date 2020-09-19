@@ -104,6 +104,8 @@ img {
             background: #4f7df3; }
             #main-div .container #social-group .social > div:hover i {
               color: #fff; }
+          #main-div .container #social-group .social > div:focus {
+            outline: none; }
           #main-div .container #social-group .social > div i {
             font-size: 14px;
             color: #4f7df3; }

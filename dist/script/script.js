@@ -8,6 +8,9 @@ function valSub() {
   ) {
     emailDiv.classList.add("error")
   }
+  if (!emailDiv.classList.contains("error")) {
+    document.getElementById("myForm").submit()
+  }
 }
 
 document.getElementById("btn-sub").addEventListener("click", function (event) {
