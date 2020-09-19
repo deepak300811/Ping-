@@ -1,0 +1,190 @@
+$max-width: 1200px;
+$primary-blue: hsl(223, 87%, 63%);
+$secondary-pale-blue: hsl(223, 100%, 88%);
+$secondary-light-red: hsl(354, 100%, 66%);
+$neutral-gray: hsl(0, 0%, 59%);
+$neutral-very-dark-blue: hsl(209, 33%, 12%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 20px;
+  font-family: "Libre Franklin", sans-serif;
+}
+img {
+  width: 100%;
+}
+
+#main-div {
+  max-width: $max-width;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  .container {
+    margin: 2rem;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .l-bold {
+      font-weight: 700;
+      font-size: 1.8rem;
+    }
+    .l-light {
+      font-weight: 300;
+      color: $neutral-gray;
+    }
+
+    #logo {
+      margin: 1rem 0;
+    }
+    #lauching-section {
+      text-align: center;
+      p {
+        margin: 1rem 0;
+        & > span {
+          font-size: 3rem;
+        }
+      }
+    }
+    #form-div {
+      width: 100%;
+      form {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 5fr 2.5fr;
+        justify-content: center;
+        padding: 1.7rem;
+        grid-gap: 1rem;
+        #email-div {
+          grid-row: 1 / span 2;
+          input {
+            width: 100%;
+            border: #3956a547 1px solid;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            font-weight: 100;
+            border-radius: 30px;
+            &::placeholder {
+              color: #3956a547;
+              letter-spacing: 1px;
+            }
+            &:focus {
+              outline: none;
+            }
+          }
+          & > div {
+            visibility: hidden;
+            font-size: 0.8rem;
+            color: $secondary-light-red;
+            padding: 0.5rem 1.5rem;
+          }
+
+          &.error > div {
+            visibility: visible;
+          }
+          &.error {
+            input {
+              border: $secondary-light-red 1px solid;
+            }
+          }
+        }
+        button {
+          box-shadow: 4px 7px 13px 0px hsl(223, 100%, 88%);
+          padding: 1rem 2rem !important;
+          border-radius: 30px;
+          font-size: 1rem;
+          font-weight: 300;
+          background: $primary-blue;
+          letter-spacing: 0.5px;
+          color: #fff;
+          cursor: pointer;
+          border: none;
+          &:focus {
+            outline: none;
+          }
+          &:hover {
+            background: #4f7df3b8;
+          }
+        }
+      }
+    }
+    #img-div {
+      padding: 1.5rem 1rem 3rem 1rem;
+    }
+    #social-group {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .social {
+        padding: 1rem 0;
+        display: flex;
+        & > div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 0.5rem;
+          cursor: pointer;
+          border: #3956a521 1px solid;
+          margin-right: 0.8rem;
+          border-radius: 50%;
+          &:hover {
+            background: $primary-blue;
+            i {
+              color: #fff;
+            }
+          }
+          i {
+            font-size: 14px;
+            color: $primary-blue;
+          }
+        }
+      }
+      .social-text {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  #main-div {
+    .container {
+      max-width: 480px;
+      .l-bold {
+        font-weight: 700;
+        font-size: 1.6rem;
+      }
+      #lauching-section {
+        p {
+          & > span {
+            font-size: 1.6rem;
+          }
+        }
+      }
+      #form-div {
+        text-align: center;
+        form {
+          grid-template-columns: 1fr;
+          #email-div {
+            & > div {
+              display: none;
+            }
+
+            &.error > div {
+              display: block;
+            }
+          }
+        }
+      }
+      #img-div {
+        padding: 1rem 1rem;
+        margin-bottom: 3rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;200;300;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Ping coming soon page</title>
+  </head>
+
+  <body>
+    <main id="main-div">
+      <div class="container">
+        <div id="logo">
+          <span class="l-bold">
+            PING<span style="color: hsl(223, 87%, 63%)">.</span>
+          </span>
+        </div>
+        <div id="lauching-section">
+          <p>
+            <span class="l-light">We are launching </span>
+            <span class="l-bold">soon!</span>
+          </p>
+          <p>Subscribe and get notified</p>
+        </div>
+        <div id="form-div">
+          <form action="#" autocomplete="off">
+            <div id="email-div" class="">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Your email address..."
+              />
+              <div>
+                <p><i> Please provide a valid email address</i></p>
+              </div>
+            </div>
+
+            <button type="submit" id="btn-sub" onclick="valSub();">
+              Notify Me
+            </button>
+          </form>
+        </div>
+        <div id="img-div">
+          <img src="./images/illustration-dashboard.png" alt="" />
+        </div>
+        <div id="social-group">
+          <div class="social">
+            <div>
+              <i class="fab fa-facebook-f"></i>
+            </div>
+            <div>
+              <i class="fab fa-twitter"></i>
+            </div>
+            <div>
+              <i class="fab fa-instagram"></i>
+            </div>
+          </div>
+          <div class="social-text l-light">
+            <p>&copy; Copyright Ping, All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./script/script.js"></script>
+  </body>
+</html>

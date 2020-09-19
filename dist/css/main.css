@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-size: 20px;
+  font-family: "Libre Franklin", sans-serif; }
+
+img {
+  width: 100%; }
+
+#main-div {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: center; }
+  #main-div .container {
+    margin: 2rem;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    #main-div .container .l-bold {
+      font-weight: 700;
+      font-size: 1.8rem; }
+    #main-div .container .l-light {
+      font-weight: 300;
+      color: #969696; }
+    #main-div .container #logo {
+      margin: 1rem 0; }
+    #main-div .container #lauching-section {
+      text-align: center; }
+      #main-div .container #lauching-section p {
+        margin: 1rem 0; }
+        #main-div .container #lauching-section p > span {
+          font-size: 3rem; }
+    #main-div .container #form-div {
+      width: 100%; }
+      #main-div .container #form-div form {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 5fr 2.5fr;
+        justify-content: center;
+        padding: 1.7rem;
+        grid-gap: 1rem; }
+        #main-div .container #form-div form #email-div {
+          grid-row: 1 / span 2; }
+          #main-div .container #form-div form #email-div input {
+            width: 100%;
+            border: #3956a547 1px solid;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            font-weight: 100;
+            border-radius: 30px; }
+            #main-div .container #form-div form #email-div input::placeholder {
+              color: #3956a547;
+              letter-spacing: 1px; }
+            #main-div .container #form-div form #email-div input:focus {
+              outline: none; }
+          #main-div .container #form-div form #email-div > div {
+            visibility: hidden;
+            font-size: 0.8rem;
+            color: #ff5263;
+            padding: 0.5rem 1.5rem; }
+          #main-div .container #form-div form #email-div.error > div {
+            visibility: visible; }
+          #main-div .container #form-div form #email-div.error input {
+            border: #ff5263 1px solid; }
+        #main-div .container #form-div form button {
+          box-shadow: 4px 7px 13px 0px #c2d3ff;
+          padding: 1rem 2rem !important;
+          border-radius: 30px;
+          font-size: 1rem;
+          font-weight: 300;
+          background: #4f7df3;
+          letter-spacing: 0.5px;
+          color: #fff;
+          cursor: pointer;
+          border: none; }
+          #main-div .container #form-div form button:focus {
+            outline: none; }
+          #main-div .container #form-div form button:hover {
+            background: #4f7df3b8; }
+    #main-div .container #img-div {
+      padding: 1.5rem 1rem 3rem 1rem; }
+    #main-div .container #social-group {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      #main-div .container #social-group .social {
+        padding: 1rem 0;
+        display: flex; }
+        #main-div .container #social-group .social > div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 0.5rem;
+          cursor: pointer;
+          border: #3956a521 1px solid;
+          margin-right: 0.8rem;
+          border-radius: 50%; }
+          #main-div .container #social-group .social > div:hover {
+            background: #4f7df3; }
+            #main-div .container #social-group .social > div:hover i {
+              color: #fff; }
+          #main-div .container #social-group .social > div i {
+            font-size: 14px;
+            color: #4f7df3; }
+      #main-div .container #social-group .social-text {
+        font-size: 12px; }
+
+@media (max-width: 600px) {
+  #main-div .container {
+    max-width: 480px; }
+    #main-div .container .l-bold {
+      font-weight: 700;
+      font-size: 1.6rem; }
+    #main-div .container #lauching-section p > span {
+      font-size: 1.6rem; }
+    #main-div .container #form-div {
+      text-align: center; }
+      #main-div .container #form-div form {
+        grid-template-columns: 1fr; }
+        #main-div .container #form-div form #email-div > div {
+          display: none; }
+        #main-div .container #form-div form #email-div.error > div {
+          display: block; }
+    #main-div .container #img-div {
+      padding: 1rem 1rem;
+      margin-bottom: 3rem; } }
