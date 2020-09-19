@@ -127,7 +127,7 @@ img {
           display: flex;
           justify-content: center;
           align-items: center;
-          padding: 0.5rem;
+          padding: 0.5rem 0.7rem;
           cursor: pointer;
           border: #3956a521 1px solid;
           margin-right: 0.8rem;
@@ -144,6 +144,10 @@ img {
           i {
             font-size: 14px;
             color: $primary-blue;
+          }
+          & > div {
+            text-align: center;
+            width: 14px;
           }
         }
       }
